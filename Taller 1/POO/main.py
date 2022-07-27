@@ -21,5 +21,8 @@ figura.setNumLados(10) # ---- modifique el atributo de este objeto
 perro = Perro('Bruno', 'Beagle')
 persona = Persona('Jose', '213215854554', perro)
 
-print( 'Nombre de la persona: {} Nombre de la mascota: {}'.format(persona.nombre, persona.mascota.nombre ))
+#print( 'Nombre de la persona: {} Nombre de la mascota: {}'.format(persona.nombre, persona.mascota.nombre ))
+
+print()
+print(persona)
 

@@ -1,0 +1,24 @@
+digraph Taller{ 
+ node[style=filled, fillcolor= "#FF0000", shape=box, fontcolor= white]; 
+ nodesep = 0.6; 
+ subgraph cluster_subContenedor { 
+ label="Lista Enlazada Simple"; 
+ bgcolor="#1E90FF"; 
+ fontcolor= white; 
+  fontsize= 20; 
+nodo1[label = "1"]; 
+nodo2[label = "2"]; 
+nodo3[label = "3"]; 
+nodo4[label = "4"]; 
+nodo5[label = "5"]; 
+nodo6[label = "6"]; 
+
+nodo1 -> nodo2; 
+nodo2 -> nodo3; 
+nodo3 -> nodo4; 
+nodo4 -> nodo5; 
+nodo5 -> nodo6; 
+
+{rank=same; nodo1; nodo2; nodo3; nodo4; nodo5; nodo6}; 
+ }
+}
