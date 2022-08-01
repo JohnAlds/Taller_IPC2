@@ -23,7 +23,7 @@ class Pila:
 
     def pop(self):
 
-        if self.primero == None:
+        if self.size == 0:
 
             print('La pila esta vacia, no se puede obtener la cima.')
         else:
@@ -31,15 +31,25 @@ class Pila:
             cimaR = self.cima
             temp = self.primero
 
-            while temp.arriba != self.cima:
+            if temp.arriba != None:
 
-                temp = temp.arriba
+                while temp.arriba != self.cima:
+
+                    temp = temp.arriba
             
-            temp.arriba = None
-            self.cima = temp
-            self.size -= 1
+            
+                temp.arriba = None
+                self.cima = temp
+                self.size -= 1
 
-            return cimaR.dato
+                return cimaR.dato
+            else:
+
+                cimaR = self.cima
+                self.cima = self.primero = None
+                self.size -= 1
+
+                return cimaR.dato
 
     def mostrar(self):
 

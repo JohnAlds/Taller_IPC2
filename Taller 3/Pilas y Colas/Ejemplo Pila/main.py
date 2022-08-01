@@ -24,8 +24,8 @@ print(numero)
 print('Después de haber sacado de la pila: \n')
 pila.mostrar()
 
-pila.pop()
-pila.pop()
+print(pila.pop())
+print(pila.pop())
 
 pila.pop()
 
