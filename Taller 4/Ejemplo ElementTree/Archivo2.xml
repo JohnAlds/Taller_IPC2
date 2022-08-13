@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entrenadores>
+    
+    <entrenador>
+        <datosentrenador>
+            <nombre>Juan</nombre>
+            <edad>20</edad>
+        </datosentrenador>
+        <medallas>6</medallas>
+        <pokeballs>20</pokeballs>
+        <pokemones>
+            <pokemon nombre="Persian" tipo="Normal"/>
+            <pokemon nombre="Dragonair" tipo="Dragon"/>
+            <pokemon nombre="Ninetales" tipo="Fuego"/>
+            <pokemon nombre="Squirtle" tipo="Agua"/>
+            <pokemon nombre="Kingler" tipo="Agua"/>
+        </pokemones>
+    </entrenador>
+
+    <entrenador>
+        <datosentrenador>
+            <nombre>Alex</nombre>
+            <edad>19</edad>
+        </datosentrenador>
+        <medallas>5</medallas>
+        <pokeballs>10</pokeballs>
+        <pokemones>
+            <pokemon nombre="Snorlax" tipo="Normal"/>
+            <pokemon nombre="Clefable" tipo="Hada"/>
+            <pokemon nombre="Wigglytuf" tipo="Normal"/>
+        </pokemones>
+    </entrenador>
+
+    <entrenador>
+        <datosentrenador>
+            <nombre>Pablo</nombre>
+            <edad>21</edad>
+        </datosentrenador>
+        <medallas>8</medallas>
+        <pokeballs>15</pokeballs>
+        <pokemones>
+            <pokemon nombre="Charmander" tipo="Fuego"/>
+            <pokemon nombre="Charmeleon" tipo="Fuego"/>
+            <pokemon nombre="Charizard" tipo="Fuego"/>
+        </pokemones>
+    </entrenador>
+
+    <entrenador>
+        <datosentrenador>
+            <nombre>Leonardo</nombre>
+            <edad>22</edad>
+        </datosentrenador>
+        <medallas>13</medallas>
+        <pokeballs>18</pokeballs>
+        <pokemones>
+            <pokemon nombre="Geodude" tipo="Roca/Tierra"/>
+            <pokemon nombre="Graveler" tipo="Roca/Tierra"/>
+            <pokemon nombre="Onix" tipo="Roca/Tierra"/>
+            <pokemon nombre="Pikachu" tipo="Electrico"/>
+        </pokemones>
+    </entrenador>
+
+</entrenadores>
