@@ -129,13 +129,49 @@ class Lista_Doble:
 
             temp = temp.siguiente 
     
-
     def mostrarPokemones(self):
-
+        
         temp = self.primero 
 
         while temp != None:
 
             print('Nombre: {}\nTipo: {}\n'.format(temp.dato.nombre, temp.dato.tipo)) 
 
-            temp = temp.siguiente 
+            temp = temp.siguiente
+
+    #obtener entrenador deseado por el nombre
+    def obtenerEntrenador(self, nombreE):
+
+        temp = self.primero
+
+        while temp != None:
+
+            if nombreE.lower() == temp.dato.nombre.lower(): #cuando encuentre el elemento deseado retornara el dato que contiene el nodo, en este caso un entrenador el cual fue buscado por su nombre
+
+                return temp.dato # se retorna el dato
+            
+            temp = temp.siguiente #el temp recorre la lista
+        
+        if temp == None: #en el caso que no se haya encontrado el entrenador, mostrara el siguiente mensaje en consola.
+
+            print('Entrenador no encontrado.') #mensaje en caso no encuentre el entrenador
+
+    #obtener un elemento por la posición en la lista
+    def obtenerElemento(self, posicion):
+
+        i = 1 #nuestra lista comienza en la posición 1
+        temp = self.primero
+
+        while temp != None:
+
+            if i == posicion:
+
+                return temp.dato
+
+            i += 1
+            temp = temp.siguiente
+        
+        if temp == None:
+
+            print('Elemento no encontrado.')
+
